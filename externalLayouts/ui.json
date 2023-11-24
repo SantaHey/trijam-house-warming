@@ -1,0 +1,51 @@
+{
+  "associatedLayout": "Jn",
+  "name": "UI",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 144,
+      "height": 540,
+      "layer": "",
+      "name": "NewSprite2",
+      "persistentUuid": "d58e29e0-6bd0-4e5d-ad2b-796c0df78c05",
+      "width": 720,
+      "x": 180,
+      "y": 270,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 144,
+      "height": 450,
+      "layer": "",
+      "name": "NewSprite2",
+      "persistentUuid": "e1f9561c-ce60-4191-94cc-1c6913cbfc78",
+      "width": 630,
+      "x": 1170,
+      "y": 360,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 90,
+    "gridHeight": 90,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.3645833333333333,
+    "windowMask": false
+  }
+}

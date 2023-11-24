@@ -99,19 +99,95 @@
         "name": "RobloxScreenShot20230501_152547353.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Jn-meuble2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Jn-meuble2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Jn-meuble1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Jn-meuble1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Meuble1",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Contour",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;117;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Déplaçable",
@@ -131,7 +207,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "assets\\Jn-meuble1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -147,20 +223,36 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 20,
-                        "y": 13
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 49,
-                        "y": 13
+                        "x": 10,
+                        "y": 0
                       },
                       {
-                        "x": 49,
-                        "y": 42
+                        "x": 10,
+                        "y": 5
                       },
                       {
-                        "x": 20,
-                        "y": 42
+                        "x": 5,
+                        "y": 5
+                      },
+                      {
+                        "x": 5,
+                        "y": 10
+                      },
+                      {
+                        "x": 10,
+                        "y": 10
+                      },
+                      {
+                        "x": 10,
+                        "y": 15
+                      },
+                      {
+                        "x": 0,
+                        "y": 15
                       }
                     ]
                   ]
@@ -237,8 +329,17 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/snaptogrid"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/meuble"
     }
   ],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/ui"
+    }
+  ],
   "externalSourceFiles": []
 }
