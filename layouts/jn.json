@@ -9,37 +9,21 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
+    "gridWidth": 90,
+    "gridHeight": 90,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
+    "snap": true,
     "zoomFactor": 0.4027225833325915,
-    "windowMask": false
+    "windowMask": true
   },
   "objectsGroups": [],
   "variables": [],
-  "instances": [
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "NewSprite",
-      "persistentUuid": "8dc326fd-15ac-471c-80bc-6697223e01d6",
-      "width": 0,
-      "x": 355,
-      "y": 153,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    }
-  ],
+  "instances": [],
   "objects": [
     {
       "adaptCollisionMaskAutomatically": true,
@@ -110,7 +94,86 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "cellSize",
+            "=",
+            "90"
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Draw",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Sources :\nhttps://editor.gdevelop.io/?project=example://snap-object-to-grid"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DraggableBehavior::Dragged"
+          },
+          "parameters": [
+            "Meuble",
+            "Déplaçable"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SnapToGrid::SnapObjectToVirtualGrid"
+          },
+          "parameters": [
+            "",
+            "Meuble",
+            "Variable(cellSize)",
+            "Variable(cellSize)",
+            "0",
+            "0",
+            ""
+          ]
+        }
+      ]
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 200,

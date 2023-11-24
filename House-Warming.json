@@ -13,10 +13,10 @@
     "folderProject": true,
     "orientation": "default",
     "packageName": "com.example.gamename",
-    "pixelsRounding": true,
+    "pixelsRounding": false,
     "projectUuid": "f82641da-137c-4e50-b4f6-6c9bfd117fbe",
     "scaleMode": "nearest",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -72,15 +72,151 @@
         "name": "WIN_20230316_16_04_16_Pro.jpg",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RobloxScreenShot20230501_152547352.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RobloxScreenShot20230501_152547352.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RobloxScreenShot20230501_152547353.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RobloxScreenShot20230501_152547353.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Meuble1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Déplaçable",
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 20,
+                        "y": 13
+                      },
+                      {
+                        "x": 49,
+                        "y": 13
+                      },
+                      {
+                        "x": 49,
+                        "y": 42
+                      },
+                      {
+                        "x": 20,
+                        "y": 42
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Drawer",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "fillColor": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "outlineColor": {
+        "b": 42,
+        "g": 87,
+        "r": 139
+      },
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "none"
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Meuble1"
+      },
+      {
+        "objectName": "Drawer"
+      }
+    ]
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Meuble",
+      "objects": [
+        {
+          "name": "Meuble1"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "layouts": [
     {
@@ -97,7 +233,12 @@
     }
   ],
   "externalEvents": [],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/snaptogrid"
+    }
+  ],
   "externalLayouts": [],
   "externalSourceFiles": []
 }
