@@ -174,10 +174,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewSprite.png",
+        "file": "assets/New image.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image",
         "smoothed": false,
         "userAdded": true
       }
@@ -328,9 +328,9 @@
       ],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Déplaçable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -408,9 +408,9 @@
       ],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Déplaçable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -488,9 +488,9 @@
       ],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Déplaçable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -568,9 +568,9 @@
       ],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Déplaçable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -648,9 +648,9 @@
       ],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Déplaçable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -728,9 +728,9 @@
       ],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Déplaçable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -808,9 +808,9 @@
       ],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Déplaçable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -888,9 +888,9 @@
       ],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Déplaçable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -968,9 +968,9 @@
       ],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Déplaçable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
