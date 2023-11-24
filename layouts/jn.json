@@ -353,84 +353,22 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Rotate object",
+      "name": "Select object",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
-      "events": [],
-      "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "Meuble::est_cliqué"
-          },
-          "parameters": [
-            "",
-            "Meuble1",
-            "Déplaçable",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ModVarScene"
-          },
-          "parameters": [
-            "selectedMobilo",
-            "=",
-            "1"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "VarScene"
-          },
-          "parameters": [
-            "selectedMobilo",
-            "=",
-            "1"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "EffectCapability::EffectBehavior::EnableEffect"
-          },
-          "parameters": [
-            "Meuble1",
-            "Effect",
-            "\"Contour\"",
-            "yes"
-          ]
-        }
-      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "Meuble::est_cliqué"
               },
               "parameters": [
                 "",
-                "r"
+                "Meuble1",
+                "Déplaçable",
+                ""
               ]
             },
             {
@@ -440,82 +378,101 @@
               "parameters": []
             }
           ],
-          "actions": []
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "VarScene"
-          },
-          "parameters": [
-            "selectedMobilo",
-            "=",
-            "1"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "EffectCapability::EffectBehavior::EnableEffect"
-          },
-          "parameters": [
-            "Meuble1",
-            "Effect",
-            "\"Contour\"",
-            "no"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "Meuble::est_cliqué"
-          },
-          "parameters": [
-            "",
-            "Meuble_2",
-            "Déplaçable",
-            ""
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "selectedMobilo",
+                "=",
+                "1"
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ModVarScene"
-          },
-          "parameters": [
-            "selectedMobilo",
-            "=",
-            "2"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "selectedMobilo",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Meuble1",
+                "Effect",
+                "\"Contour\"",
+                "yes"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "r"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": []
+            }
           ]
         },
         {
-          "type": {
-            "value": "DebuggerTools::ConsoleLog"
-          },
-          "parameters": [
-            "ToString(Variable(selectedMobilo))",
-            "",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "selectedMobilo",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Meuble1",
+                "Effect",
+                "\"Contour\"",
+                "no"
+              ]
+            }
           ]
         }
-      ]
+      ],
+      "parameters": []
     }
   ],
   "layers": [

@@ -171,6 +171,15 @@
         "name": "Tapis",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -303,7 +312,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Contour",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;117;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "checkCollisionMask": true,
@@ -370,7 +392,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Contour",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;117;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "checkCollisionMask": true,
@@ -437,7 +472,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Contour",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;117;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "checkCollisionMask": true,
@@ -504,7 +552,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Contour",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;117;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "checkCollisionMask": true,
@@ -571,7 +632,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Contour",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;117;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "checkCollisionMask": true,
@@ -638,7 +712,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Contour",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;117;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "checkCollisionMask": true,
@@ -705,7 +792,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Contour",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;117;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "checkCollisionMask": true,
@@ -772,7 +872,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Contour",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;117;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "checkCollisionMask": true,
@@ -839,7 +952,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Contour",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 5
+          },
+          "stringParameters": {
+            "color": "0;117;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "checkCollisionMask": true,
