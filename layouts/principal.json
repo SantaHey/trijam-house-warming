@@ -9,24 +9,235 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
+    "gridWidth": 90,
+    "gridHeight": 90,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.2987985363606906,
+    "snap": true,
+    "zoomFactor": 0.3895856273827297,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
-  "instances": [],
-  "objects": [],
+  "instances": [
+    {
+      "angle": 180,
+      "customSize": true,
+      "depth": 10,
+      "height": 180,
+      "layer": "",
+      "name": "Bureau",
+      "persistentUuid": "4b09d717-22ee-4e78-a5ec-461c5b61c947",
+      "width": 180,
+      "x": 720,
+      "y": 270,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 30,
+      "height": 90,
+      "layer": "",
+      "name": "Chaise",
+      "persistentUuid": "0aeaf11f-2b79-498e-a107-8db6d93b1be4",
+      "width": 90,
+      "x": 720,
+      "y": 360,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "depth": 13,
+      "height": 180,
+      "layer": "",
+      "name": "Plante",
+      "persistentUuid": "e6d24fc3-3c6f-49f4-bbc2-3c5891801ac3",
+      "width": 270,
+      "x": 135,
+      "y": 315,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "depth": 30,
+      "height": 180,
+      "layer": "",
+      "name": "Piano",
+      "persistentUuid": "cd567a68-19b3-4b4e-8ccb-801483be93d3",
+      "width": 90,
+      "x": 225,
+      "y": 675,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 35,
+      "height": 180,
+      "layer": "",
+      "name": "Livre",
+      "persistentUuid": "2e774208-a114-4b17-8628-ae9d19abf169",
+      "width": 90,
+      "x": 180,
+      "y": 540,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "depth": 10,
+      "height": 270,
+      "layer": "",
+      "name": "Télé",
+      "persistentUuid": "cc7bf496-d684-47c8-9b4a-5342a622a923",
+      "width": 90,
+      "x": 450,
+      "y": 180,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "depth": 10,
+      "height": 270,
+      "layer": "",
+      "name": "Tapis",
+      "persistentUuid": "24530ff1-02d3-492d-9d4e-767736bbd0b4",
+      "width": 360,
+      "x": 315,
+      "y": 495,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "depth": 10,
+      "height": 270,
+      "layer": "",
+      "name": "Canapé",
+      "persistentUuid": "d27348dd-17bc-4a7c-83d9-364ee73ce9e6",
+      "width": 180,
+      "x": 720,
+      "y": 540,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 90,
+      "layer": "",
+      "name": "Table",
+      "persistentUuid": "354d2eb0-9536-4f1a-a577-1a7be8fe41e7",
+      "width": 90,
+      "x": 450,
+      "y": 540,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Bord_apparts2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\UI.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 50,
+                        "y": 0
+                      },
+                      {
+                        "x": 50,
+                        "y": 50
+                      },
+                      {
+                        "x": 0,
+                        "y": 50
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Bord_apparts2"
+      }
+    ]
   },
   "events": [
     {
@@ -56,14 +267,67 @@
       "actions": [
         {
           "type": {
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
+            "\"UI_Principal\"",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
             "value": "ModVarScene"
           },
           "parameters": [
             "cellSize",
             "=",
-            "32"
+            "90"
           ]
         },
+        {
+          "type": {
+            "value": "ModVarSceneTxt"
+          },
+          "parameters": [
+            "selectedMobilo",
+            "=",
+            "\"Rien\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DraggableBehavior::Dragged"
+          },
+          "parameters": [
+            "Meuble",
+            "Déplaçable"
+          ]
+        }
+      ],
+      "actions": [
         {
           "type": {
             "value": "SnapToGrid::SnapObjectToVirtualGrid"
@@ -79,29 +343,6 @@
           ]
         }
       ]
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Draw",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Repeat",
-      "repeatExpression": "SceneWindowWidth() / Variable(cellWidth)",
-      "conditions": [],
-      "actions": []
     }
   ],
   "layers": [

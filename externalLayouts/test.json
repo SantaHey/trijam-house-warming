@@ -1,15 +1,15 @@
 {
-  "associatedLayout": "Jn",
-  "name": "UI",
+  "associatedLayout": "Principal",
+  "name": "TEst",
   "instances": [
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
+      "depth": 4,
       "height": 540,
       "layer": "",
-      "name": "Bord_apparts",
-      "persistentUuid": "3c95ad52-9bda-4aaf-847f-b17b116ac79d",
+      "name": "Bord_apparts2",
+      "persistentUuid": "a231b9e0-2e42-43cd-8126-9053e521919b",
       "width": 720,
       "x": 180,
       "y": 270,
@@ -21,15 +21,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
+      "depth": 0,
       "height": 450,
       "layer": "",
-      "name": "Bord_apparts",
-      "persistentUuid": "6493c43f-de67-4012-b67c-dbfbac569bc7",
+      "name": "Bord_apparts2",
+      "persistentUuid": "f810633a-5270-47d8-8c43-b87145656fcb",
       "width": 540,
       "x": 1170,
       "y": 360,
-      "zOrder": 1,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -45,7 +45,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3645833333333333,
+    "zoomFactor": 0.31928945896901667,
     "windowMask": false
   }
 }
