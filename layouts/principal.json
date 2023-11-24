@@ -229,6 +229,17 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
     }
   ],
   "objectsFolderStructure": {
@@ -236,6 +247,9 @@
     "children": [
       {
         "objectName": "Bord_apparts2"
+      },
+      {
+        "objectName": "NewSprite"
       }
     ]
   },

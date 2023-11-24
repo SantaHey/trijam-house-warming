@@ -23,10 +23,97 @@
   },
   "objectsGroups": [],
   "variables": [],
-  "instances": [],
-  "objects": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 403,
+      "layer": "",
+      "name": "NewBBText",
+      "persistentUuid": "c144d9f6-389f-48ef-a4a5-5d0a6a3af6c4",
+      "width": 989,
+      "x": 465,
+      "y": 352,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "NewText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewBitmapText",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Tu viens d’emmenager dans une nouvelle ville! \nPour feter ca, grosse cremaillere ce soir! \nTu te dis qu’une cremaillere, c’est mieux avec des meubles qui sont deja en place et tu as tout a fait raison! \nTu t’es peut-être laisse emporter par l’enthousiasme du changement... il te reste 1 heure et cet appartement est plus petit que l’ancien... \nVa falloir bien reflechir aux emplacements et agir vite!",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "65;117;5",
+        "bitmapFontResourceName": "",
+        "textureAtlasResourceName": "",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewBBText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Tu viens d’emménager dans une nouvelle ville! \nPour fêter ça, grosse crémaillère ce soir! \nTu te dis qu’une crémaillère, c’est mieux avec des meubles qui sont déjà en place et tu as tout à fait raison! \nTu t’es peut-être laissé emporter par l’enthousiasme du changement... il te reste 1 heure et cet appartement est plus petit que l’ancien... Va falloir bien réfléchir aux emplacements et agir vite!",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Arial",
+        "align": "left",
+        "wordWrap": true
+      }
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "NewText"
+      },
+      {
+        "objectName": "NewBitmapText"
+      },
+      {
+        "objectName": "NewBBText"
+      }
+    ]
   },
   "events": [],
   "layers": [
@@ -98,6 +185,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }
