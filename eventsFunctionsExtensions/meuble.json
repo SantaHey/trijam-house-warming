@@ -126,88 +126,194 @@
       "description": "",
       "fullName": "",
       "name": "Meuble",
-      "objectType": "",
+      "objectType": "Sprite",
       "eventsFunctions": [
         {
           "fullName": "",
           "functionType": "Action",
-          "name": "Function",
-          "sentence": "objet _PARAM0_",
+          "name": "Activer_si_cliqué",
+          "sentence": "objet _PARAM0_ (nom meuble sélectionné : )",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            }
-          ],
-          "parameters": [
-            {
-              "description": "Object",
-              "name": "Object",
-              "type": "object"
-            },
-            {
-              "description": "Behavior",
-              "name": "Behavior",
-              "supplementaryInformation": "Meuble::Meuble",
-              "type": "behavior"
-            }
-          ],
-          "objectGroups": []
-        },
-        {
-          "fullName": "",
-          "functionType": "Expression",
-          "name": "Cliqué",
-          "sentence": "",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Select object",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
-                  "type": {
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Object",
-                    "",
-                    "",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "selection_variable_name",
+                        "=",
+                        "Object.Behavior::PropertyID()"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "ID",
+                        "=",
+                        "Variable(selection_variable_name)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Effect",
+                        "\"Contour\"",
+                        "yes"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "r"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetAngle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "+",
+                            "90"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "DebuggerTools::ConsoleLog"
+                          },
+                          "parameters": [
+                            "\"Propriété : \"+ToString(Object.Behavior::PropertyID())",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "selectedMobilo",
-                    "=",
-                    "1"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "ID",
+                        "=",
+                        "Variable(selection_variable_name)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Effect",
+                        "\"Contour\"",
+                        "no"
+                      ]
+                    }
                   ]
                 }
-              ]
+              ],
+              "parameters": []
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "ToString(Variable(test))",
+                    "",
+                    ""
+                  ]
+                }
+              ]
             }
           ],
-          "expressionType": {
-            "type": "expression"
-          },
           "parameters": [
             {
               "description": "Object",
               "name": "Object",
+              "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
@@ -215,12 +321,28 @@
               "name": "Behavior",
               "supplementaryInformation": "Meuble::Meuble",
               "type": "behavior"
+            },
+            {
+              "description": "",
+              "name": "test",
+              "type": "scenevar"
             }
           ],
           "objectGroups": []
         }
       ],
-      "propertyDescriptors": [],
+      "propertyDescriptors": [
+        {
+          "value": "",
+          "type": "Number",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": false,
+          "name": "ID"
+        }
+      ],
       "sharedPropertyDescriptors": []
     }
   ],

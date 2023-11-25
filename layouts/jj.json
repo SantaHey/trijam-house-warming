@@ -54,6 +54,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1146,
+      "layer": "",
+      "name": "NewSprite2",
+      "persistentUuid": "93740ee5-8e4d-443b-a5d1-c58c8eb094da",
+      "width": 1977,
+      "x": -31,
+      "y": -26,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -281,6 +297,10 @@
     {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Meuble",
+      "type": "Meuble::Meuble"
     },
     {
       "name": "Opacity",

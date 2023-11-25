@@ -534,6 +534,10 @@
       "type": "FlippableCapability::FlippableBehavior"
     },
     {
+      "name": "Meuble",
+      "type": "Meuble::Meuble"
+    },
+    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
     },

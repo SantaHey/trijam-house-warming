@@ -18,11 +18,18 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3300560049165935,
+    "zoomFactor": 0.3768772036750887,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "selectedMobilo",
+      "type": "string",
+      "value": ""
+    }
+  ],
   "instances": [
     {
       "angle": 180,
@@ -65,8 +72,8 @@
       "name": "Plante",
       "persistentUuid": "e6d24fc3-3c6f-49f4-bbc2-3c5891801ac3",
       "width": 270,
-      "x": 135,
-      "y": 315,
+      "x": 180,
+      "y": 360,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -81,8 +88,8 @@
       "name": "Piano",
       "persistentUuid": "cd567a68-19b3-4b4e-8ccb-801483be93d3",
       "width": 90,
-      "x": 225,
-      "y": 675,
+      "x": 180,
+      "y": 720,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -113,7 +120,7 @@
       "name": "Télé",
       "persistentUuid": "cc7bf496-d684-47c8-9b4a-5342a622a923",
       "width": 90,
-      "x": 450,
+      "x": 540,
       "y": 180,
       "zOrder": 6,
       "numberProperties": [],
@@ -129,8 +136,8 @@
       "name": "Tapis",
       "persistentUuid": "24530ff1-02d3-492d-9d4e-767736bbd0b4",
       "width": 360,
-      "x": 315,
-      "y": 495,
+      "x": 270,
+      "y": 630,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -146,7 +153,7 @@
       "persistentUuid": "d27348dd-17bc-4a7c-83d9-364ee73ce9e6",
       "width": 180,
       "x": 720,
-      "y": 540,
+      "y": 630,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -171,14 +178,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 4,
-      "height": 270,
+      "depth": 1,
+      "height": 116,
       "layer": "",
-      "name": "NewSprite",
-      "persistentUuid": "bc17291b-1442-44cf-b7f8-b4fea8af2e41",
-      "width": 270,
-      "x": 900,
-      "y": 450,
+      "name": "NewBBText",
+      "persistentUuid": "caedcc40-c713-41f0-a723-168408f93e78",
+      "width": 360,
+      "x": 1440,
+      "y": 925,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -267,7 +274,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "NewSprite3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -284,19 +291,19 @@
                     [
                       {
                         "x": 5,
-                        "y": 8
+                        "y": 3
                       },
                       {
-                        "x": 20,
-                        "y": 8
+                        "x": 31,
+                        "y": 3
                       },
                       {
-                        "x": 20,
-                        "y": 18
+                        "x": 31,
+                        "y": 25
                       },
                       {
                         "x": 5,
-                        "y": 18
+                        "y": 25
                       }
                     ]
                   ]
@@ -306,6 +313,24 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewBBText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "R to Rotate",
+        "opacity": 255,
+        "fontSize": 50,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "7423149de6e486ac885567761bef3236bcdb8414d05cb0920ae7aedffdec85f9_mononoki-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -316,6 +341,9 @@
       },
       {
         "objectName": "NewSprite"
+      },
+      {
+        "objectName": "NewBBText"
       }
     ]
   },
@@ -384,12 +412,21 @@
         },
         {
           "type": {
-            "value": "ModVarSceneTxt"
+            "value": "ModVarScene"
           },
           "parameters": [
             "selectedMobilo",
             "=",
-            "\"Rien\""
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "draggingNow",
+            "False"
           ]
         }
       ]
@@ -413,8 +450,8 @@
           },
           "parameters": [
             "",
-            "\"truc\"",
-            "\"bidule\""
+            "\"ANNULER CONDITION\"",
+            "\"\""
           ]
         }
       ],
@@ -440,6 +477,77 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "name": "Select object - ESSAI",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Inventory::Has"
+              },
+              "parameters": [
+                "",
+                "\"ANNULER\"",
+                "\"ANNULER\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Meuble::Meuble::Activer_si_cliqué"
+                  },
+                  "parameters": [
+                    "Canapé",
+                    "Meuble",
+                    "selectedMobilo",
+                    "\"selectedMobilo\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"Sélection PR : \" + ToString(Variable(selectedMobilo))",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
       "name": "Select object",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -447,6 +555,15 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Meuble::est_cliqué"
@@ -466,6 +583,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"
@@ -545,6 +671,31 @@
           "conditions": [
             {
               "type": {
+                "value": "DraggableBehavior::Dropped"
+              },
+              "parameters": [
+                "Canapé",
+                "Déplaçable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "inverted": true,
                 "value": "VarScene"
               },
@@ -586,6 +737,15 @@
           "conditions": [
             {
               "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Meuble::est_cliqué"
               },
               "parameters": [
@@ -603,6 +763,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"
@@ -682,6 +851,31 @@
           "conditions": [
             {
               "type": {
+                "value": "DraggableBehavior::Dropped"
+              },
+              "parameters": [
+                "Table",
+                "Déplaçable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "inverted": true,
                 "value": "VarScene"
               },
@@ -723,6 +917,15 @@
           "conditions": [
             {
               "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Meuble::est_cliqué"
               },
               "parameters": [
@@ -740,6 +943,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"
@@ -819,6 +1031,31 @@
           "conditions": [
             {
               "type": {
+                "value": "DraggableBehavior::Dropped"
+              },
+              "parameters": [
+                "Bureau",
+                "Déplaçable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "inverted": true,
                 "value": "VarScene"
               },
@@ -860,6 +1097,15 @@
           "conditions": [
             {
               "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Meuble::est_cliqué"
               },
               "parameters": [
@@ -877,6 +1123,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"
@@ -956,6 +1211,31 @@
           "conditions": [
             {
               "type": {
+                "value": "DraggableBehavior::Dropped"
+              },
+              "parameters": [
+                "Chaise",
+                "Déplaçable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "inverted": true,
                 "value": "VarScene"
               },
@@ -997,6 +1277,15 @@
           "conditions": [
             {
               "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Meuble::est_cliqué"
               },
               "parameters": [
@@ -1014,6 +1303,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"
@@ -1093,6 +1391,31 @@
           "conditions": [
             {
               "type": {
+                "value": "DraggableBehavior::Dropped"
+              },
+              "parameters": [
+                "Plante",
+                "Déplaçable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "inverted": true,
                 "value": "VarScene"
               },
@@ -1134,6 +1457,15 @@
           "conditions": [
             {
               "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Meuble::est_cliqué"
               },
               "parameters": [
@@ -1151,6 +1483,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"
@@ -1230,6 +1571,31 @@
           "conditions": [
             {
               "type": {
+                "value": "DraggableBehavior::Dropped"
+              },
+              "parameters": [
+                "Piano",
+                "Déplaçable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "inverted": true,
                 "value": "VarScene"
               },
@@ -1271,6 +1637,15 @@
           "conditions": [
             {
               "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Meuble::est_cliqué"
               },
               "parameters": [
@@ -1288,6 +1663,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"
@@ -1367,6 +1751,31 @@
           "conditions": [
             {
               "type": {
+                "value": "DraggableBehavior::Dropped"
+              },
+              "parameters": [
+                "Livre",
+                "Déplaçable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "inverted": true,
                 "value": "VarScene"
               },
@@ -1408,6 +1817,15 @@
           "conditions": [
             {
               "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Meuble::est_cliqué"
               },
               "parameters": [
@@ -1425,6 +1843,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"
@@ -1504,6 +1931,31 @@
           "conditions": [
             {
               "type": {
+                "value": "DraggableBehavior::Dropped"
+              },
+              "parameters": [
+                "Télé",
+                "Déplaçable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "inverted": true,
                 "value": "VarScene"
               },
@@ -1545,6 +1997,15 @@
           "conditions": [
             {
               "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Meuble::est_cliqué"
               },
               "parameters": [
@@ -1562,6 +2023,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"
@@ -1632,6 +2102,31 @@
                     "90"
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DraggableBehavior::Dropped"
+              },
+              "parameters": [
+                "Tapis",
+                "Déplaçable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "draggingNow",
+                "False"
               ]
             }
           ]
@@ -1726,6 +2221,10 @@
     {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Meuble",
+      "type": "Meuble::Meuble"
     },
     {
       "name": "Opacity",
